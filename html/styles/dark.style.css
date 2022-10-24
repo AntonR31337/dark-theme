@@ -171,4 +171,15 @@ h1 {
   background: #1E1D1D;
   background-image: url(../img/footer-bg_dark.png);
 }
+
+.footer__info {
+  line-height: 20px;
+  color: #DFDADA;
+}
+
+.footer__info_span {
+  line-height: 17px;
+  color: #AAC9F1;
+  border-bottom-color: #AAC9F121;
+}
 /*# sourceMappingURL=dark.style.css.map */

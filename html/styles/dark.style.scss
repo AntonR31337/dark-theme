@@ -186,10 +186,12 @@ h1 {
     background-image: url(../img/footer-bg_dark.png);
 
     &__info {
-
-        // .footer__info_span
-
-        &_span {
+        line-height: 20px;
+        color: #DFDADA;
+            &_span {
+                line-height: 17px;
+                color: #AAC9F1;
+                border-bottom-color: #AAC9F121;
+            }
         }
-    }
 }

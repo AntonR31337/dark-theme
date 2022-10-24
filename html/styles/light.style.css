@@ -145,4 +145,14 @@ h1 {
 .footer {
   background-image: url(../img/footer-bg_light.jpeg);
 }
+
+.footer__info {
+  line-height: 20px;
+}
+
+.footer__info_span {
+  line-height: 17px;
+  color: #205EB0;
+  border-bottom-color: #205eb021;
+}
 /*# sourceMappingURL=light.style.css.map */
