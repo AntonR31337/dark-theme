@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme-togle</title>
+  <style type="text/css">
+    body {display: none;}
+  </style>
+  <script type="text/javascript">
+    window.onload = ()=> document.querySelector("body").style.display = 'block';
+  </script>
+  <link rel="stylesheet" type="text/css" href="./styles/base.style.css">
+  <link id="theme-link" rel="stylesheet" type="text/css" href="./styles/light.style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main container">
+    <h1 class="main__title">
+      Preferences
+    </h1>
+    <p class="main__text">
+      On this page you can configure the main system parameters available for customization
+    </p>
+    <form action="#" class="main__form">
+      <div class="main__form__item">
+        <label class="main__form__label">Company Title</label>
+        <input type="text" class="main__form__input" placeholder="Default">
+      </div>
+      <div class="main__form__item">
+        <label class="main__form__label">First Day</label>
+        <div class="select-form" data-state="">
+          <div class="select-form__title" data-default="Monday">Monday</div>
+          <div class="select-form__content">
+            <input id="singleSelect0" class="select-form__input" type="radio" name="singleSelect" checked />
+            <label for="singleSelect0" class="select-form__label">Monday</label>
+            <input id="singleSelect1" class="select-form__input" type="radio" name="singleSelect" />
+            <label for="singleSelect1" class="select-form__label">Sunday</label>
+            <input id="singleSelect3" class="select-form__input" type="radio" name="singleSelect" />
+            <label for="singleSelect3" class="select-form__label">System</label>
+          </div>
+        </div>
+
+      </div>
+      <div class="main__form__item">
+        <label class="main__form__label">Container Width</label>
+        <div class="select-form" data-state="">
+          <div class="select-form__title" data-default="Monday">Fixed</div>
+          <div class="select-form__content">
+            <input id="singleSelect10" class="select-form__input" type="radio" name="singleSelect" checked />
+            <label for="singleSelect10" class="select-form__label">Fixed</label>
+          </div>
+        </div>
+      </div>
+      <div class="main__form__item">
+        <label class="main__form__label">Homepage</label>
+        <div class="select-form" data-state="">
+          <div class="select-form__title" data-default="Monday">Starred Projects</div>
+          <div class="select-form__content">
+            <input id="singleSelect11" class="select-form__input" type="radio" name="singleSelect" checked />
+            <label for="singleSelect11" class="select-form__label">Starred Projects</label>
+          </div>
+        </div>
+      </div>
+      <div class="main__form__item">
+        <label class="main__form__label">Indent Size</label>
+        <input type="text" class="main__form__input" placeholder="Default">
+      </div>
+      <div class="main__form__item">
+        <div class="main__form__label">Personal Code</div>
+        <div class="main__form__label_inputs">
+          <input type="text" class="main__form__input-code" maxlength="4">
+          <span class="main__form__input-code_span">-</span>
+          <input type="text" class="main__form__input-code" maxlength="4">
+          <span class="main__form__input-code_span">-</span>
+          <input type="text" class="main__form__input-code" maxlength="4">
+          <span class="main__form__label_inputs_span">12 digits</span>
+        </div>
+      </div>
+      <div class="main__form__item">
+        <div class="main__form__label">Theme</div>
+        <div class="main__options">
+          <div class="main__options__item">
+            <input id="themeLight" type="radio" value="light" name="theme" checked class="main__options__input">
+            <label for="themeLight" class="main__options__label">Light</label>
+          </div>
+          <div class="main__options__item">
+            <input id="themeDark" type="radio" value="dark" name="theme" class="main__options__input">
+            <label for="themeDark" class="main__options__label">Dark</label>
+          </div>
+        </div>
+      </div>
+      <div class="main__buttons">
+        <button id="togleThemeBtn" class="main__buttons_confirm">Apply and Save</button>
+        <button class="main__buttons_cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <div class="footer container">
+    <div class="footer__info">
+      2020-2022
+      <span class="footer__info_span">Terms of Service</span> and <span class="footer__info_span">Conditions</span>
+      </div>
+  </div>
+  <script type="text/javascript" src="./scripts.js"></script>
+</body>
+
+</html>

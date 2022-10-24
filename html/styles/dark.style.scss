@@ -1,0 +1,195 @@
+$input-text: #F3F3F3;
+$input-bg: #585050; 
+$inputs-span: #887C7C;
+$options__label-text: #DFDADA;
+
+body {
+    background: black;
+    color: #DFDADA;
+}
+h1 {
+    color: #F3F3F3;
+}
+::-webkit-input-placeholder {
+    color: #887C7C;
+}
+.main {
+    background: #1E1D1D;
+    // .main__title
+
+    &__title {
+    }
+
+    // .main__text
+
+    &__text {
+    }
+
+    // .main__form
+
+    &__form {
+        &__input {
+            background: $input-bg;
+            color: $input-text;
+            border: 1px solid #887C7C;
+            transition: 0.3s;
+            outline: none;
+                &:hover {
+                    background: #585050;
+                    border: 1px solid #887C7C;
+                    box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2);
+                }
+                &:focus {
+                    border: 1px solid #B9D5FC;
+                }
+        }
+        &__input-code {
+            background: $input-bg;
+            color: $input-text;
+            border: 1px solid #887C7C;
+            transition: 0.3s;
+            outline: none;
+                &:hover {
+                    background: #585050;
+                    border: 1px solid #887C7C;
+                    box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2);
+                }
+                &:focus {
+                    border: 1px solid #B9D5FC;
+                }
+        }
+            &__label_inputs_span {
+                color: $inputs-span;
+            }
+    }
+
+    // .main__options
+
+    &__options {
+        
+            &__label {
+                color: $options__label-text;
+                display: inline-block;
+                cursor: pointer;
+                position: relative;
+                padding-left: 25px;
+                margin-right: 0;
+                line-height: 18px;
+                user-select: none;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: url(../img/radio_btn-empty.png) 0 0 no-repeat;
+                }
+            }
+            &__input[type=radio] {
+                display: none;
+                    &[type=radio]:checked + label::before {
+                        background: url(../img/radio_btn-checked.png) center;
+                    }
+            }
+    }
+
+    // .main__buttons
+
+    &__buttons {
+
+        // .main__buttons_confirm
+
+        &_confirm {
+            width: 115px;
+            height: 32px;
+            background: #B9D5FC;
+            border-radius: 3px;
+            color: #1E1D1D;
+            border: none;
+            transition: 0.3s;
+            outline: none;
+                &:hover {
+                    background: #B9D5FC;
+                    color: #1E1D1D;
+                    box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2);
+                }
+                &:focus {
+                    border: 1px solid #F0F6FF;
+                }
+        }
+
+        // .main__buttons_cancel
+
+        &_cancel {
+            transition: 0.3s;
+            background: #424242;
+            border: none;
+            border-radius: 3px;
+            color: #AAC9F1;
+            width: 62px;
+            height: 32px;
+            outline: none;
+                &:hover {
+                    background: #424242;
+                    box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2);
+                }
+                &:focus {
+                    border: 1px solid #B9D5FC;
+                    border-radius: 3px;
+                }
+        }
+    }
+}
+.select-form {
+
+    // .select-form__title
+
+    &__title {
+        background: $input-bg;
+        color: $input-text;
+        border: 1px solid #887C7C;
+        transition: 0.3s;
+        outline: none;
+            &:hover {
+                background: #585050;
+                border: 1px solid #887C7C;
+                box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2);
+            }
+            &:focus {
+                border: 1px solid #B9D5FC;
+            }
+    }
+
+    // .select-form__content
+
+    &__content {
+    }
+
+    // .select-form__input
+
+    &__input {
+    }
+
+    // .select-form__label
+
+    &__label {
+        transition: 0.3s;
+            &:hover {
+                background: #DFDADA;
+            }
+    }
+}
+.footer {
+    background: #1E1D1D;
+    background-image: url(../img/footer-bg_dark.png);
+
+    &__info {
+
+        // .footer__info_span
+
+        &_span {
+        }
+    }
+}
